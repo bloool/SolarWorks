@@ -1,0 +1,12 @@
+{
+"name": "Large Blast wall",
+"description": "Wall with a lot of health that explodes doing damage both to you and the enemies when destroyed.",
+"details": "Portable thorium reactor 9000",
+"size": 2,
+"health": 4000,
+"requirements": [
+    { "item": "blast-compound", "amount": 16 }
+],
+"category": "defense",
+"research": "small-blast-wall"
+}

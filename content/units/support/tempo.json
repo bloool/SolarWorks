@@ -1,0 +1,46 @@
+{
+    "type": "legs",
+    "name": "Tempo",
+    "speed": 1.5,
+    "drag": 0.3,
+    "hitSize": 15,
+    "rotateSpeed": 8,
+    "health": 750,
+    "commandLimit": 6,
+    "mineSpeed": 8,
+    "mineTier": 3,
+    "buildSpeed": 0.8,
+    "legCount": 6,
+    "legLength": 12,
+    "legTrns": 0.8,
+    "legMoveSpace": 3,
+    "hovering": true,
+    "allowLegStep": true,
+    "visualElevation": 0.5,
+    "groundLayer": 75,
+    "weapons": [
+      {
+        "name": "tempoG",
+        "x": 9,
+        "shootY": 6,
+        "reload": 15,
+        "alternate": false,
+        "ejectEffect": "none",
+        "recoil": 1,
+        "rotate": false,
+        "shootSound": "lasershoot",
+        "inaccuracy": 5,
+        "bullet": {
+          "type": "LiquidBulletType",
+          "liquid": "vidae",
+          "damage": 20,
+          "speed": 2,
+          "pierce": true,
+          "shootEffect": "shootSmall",
+          "collidesTeam": true,
+          "lifetime": 60
+        }
+      }
+    ],
+    "research": "ranae"
+  }

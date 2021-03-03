@@ -1,0 +1,30 @@
+{
+    "type": "GenericSmelter",
+    "name": "Energium Collider",
+    "health" : 450,
+    "itemCapacity": 12,
+    "updateEffect": "absorb",
+    "craftEffect": "shockwave",
+    "outputItem": {"item": "energium", "amount": 1},
+    "craftTime": 90,
+    "size": 3,
+    "hasPower": true,
+	  "hasLiquids": true,
+  	"hasItems": true,
+    "consumes": {
+    "power": 10,
+		"items": {
+			"items": [
+				{ "item": "phase-fabric", "amount": 1},
+        { "item": "silicon", "amount": 1}
+          ]
+        }
+			},
+    "requirements": [
+		{ "item": "silicon", "amount": 360 },
+		{ "item": "copper", "amount": 560 },
+		{ "item": "plastanium", "amount": 80 }
+    ],
+    "category": "crafting",
+	"research": "silicon-crucible"
+}

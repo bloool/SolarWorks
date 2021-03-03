@@ -1,0 +1,39 @@
+{
+	"type": "PowerTurret",
+	"name": "Corrode",
+	"description":"Shoots sap lazers that stay out for a while.",
+	"size": 3,
+	"health": 2400,
+	"reloadTime": 120,
+	"range": 280,
+	"maxAmmo": 20,
+	"shots": 8,
+	"burstSpacing": 5,
+	"shootSound" : "sap",
+	"recoilAmount" : 1,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"powerUse": 3,
+	"inaccuracy": 5,
+	
+	"shootType": {
+			"type" : "SapBulletType",
+			"damage": 30,
+			"sapStrength": 2,
+			"length": 300,
+			"shootEffect": "shootSmall",
+			"hitColor": "bf92f9",
+			"color": "bf92f9",
+			"width": 1,
+			"lifetime": 80,
+			"knockback": -2,
+		},	
+		
+	"requirements": [
+		{ "item": "thorium", "amount": 100 }, 
+		{ "item": "silicon", "amount": 120 }
+		{ "item": "copper", "amount": 75 }
+	],
+	"category": "turret",
+	"research": "erode"
+}

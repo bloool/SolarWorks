@@ -1,0 +1,13 @@
+{
+"name": "Large Energium wall",
+"description": "Will stop all types of attacks, be it piercing or energy, has a chance to shoot sparks when shot, and explodes with lightining when destroyed.",
+"size": 2,
+"health": 3000,
+"absorbLasers": true,
+"requirements": [
+    { "item": "energium", "amount": 8 },
+    { "item": "surge-alloy", "amount": 8 }
+],
+"category": "defense",
+"research": "small-energium-wall"
+}

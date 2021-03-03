@@ -1,0 +1,43 @@
+{
+    "type": "UnitFactory",
+    "name": "Phase Factory",
+    "description": "Produces tier 1 units at a fast rate from power alone",
+    "size": 3,
+    "consumes": {
+        "power": 5
+    },
+    "plans":[
+        {
+            "unit": "crawler",
+            "time": 5000,
+            "requirements": []
+        },
+        {
+            "unit": "flare",
+            "time": 10000,
+            "requirements": []
+        },
+        {
+            "unit": "dagger",
+            "time": 12000,
+            "requirements": []
+        },
+        {
+            "unit": "nova",
+            "time": 14000,
+            "requirements": []
+        },
+        {
+            "unit": "mono",
+            "time": 5000,
+            "requirements": []
+        }
+    ],
+    "requirements": [
+		{ "item": "phase-fabric", "amount": 50 }, 
+		{ "item": "thorium", "amount": 380 },
+		{ "item": "graphite", "amount": 180 }
+	],
+    "category": "units",
+	"research": "ground-factory"
+}

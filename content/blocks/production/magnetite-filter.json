@@ -1,0 +1,30 @@
+{
+    "type": "Separator",
+    "name": "Magnetite Filter",
+    "description": "Filters magnetite and scrap from thorium and lead.",
+    "health" : 450,
+    "itemCapacity": 12,
+    "craftTime": 20,
+    "size": 3,
+    "hasItems": true,
+    "results": [
+      { "item": "magnetite", "amount": 5},
+      { "item": "scrap", "amount": 2}
+    ],
+    "consumes": {
+    "power": 3,
+		"items": {
+			"items": [
+        { "item": "thorium", "amount": 2},
+        { "item": "lead", "amount": 2}
+            ]
+        }
+		},
+    "requirements": [
+		{ "item": "lead", "amount": 680 },
+		{ "item": "metaglass", "amount": 200 },
+		{ "item": "thorium", "amount": 180 }
+    ],
+    "category": "crafting",
+	"research": "separator"
+}

@@ -1,0 +1,83 @@
+{
+    "type": "legs",
+    "name": "Fowl",
+    "speed": 1,
+    "drag": 0.3,
+    "hitSize": 10,
+    "rotateSpeed": 5,
+    "health": 500,
+    "armor": 10,
+    "commandLimit": 0,
+    "range": 100,
+    "legCount": 4,
+    "legLength": 5,
+    "legTrns": 0.6,
+    "legMoveSpace": 1.4,
+    "hovering": true,
+    "allowLegStep": true,
+    "visualElevation": 0.1,
+    "groundLayer": 75,
+    "weapons": [
+      {
+        "name": "fowlG",
+        "x": 7,
+        "shootY": 3,
+        "reload": 80,
+        "alternate": true,
+        "ejectEffect": "none",
+        "recoil": 1,
+        "rotate": false,
+        "shootSound": "laser",
+        "bullet": {
+          "type": "LaserBulletType",
+          "damage": 25,
+          "length": 300,
+          "width": 15,
+          "healPercent": 2,
+          "collidesTeam": true,
+          "colors": [
+            "98ffa9,",
+            "98ffa9,",
+            "ffffff"
+          ],
+          "buildingDamageMultiplier": 2
+        }
+      },
+      {
+        "name": "fowlG2",
+        "x": 0,
+        "y": -5,
+        "shootY": 4,
+        "reload": 20,
+        "ejectEffect": "none",
+        "recoil": 0.5,
+        "rotate": true,
+        "mirror": false,
+        "shootSound": "missile",
+        "inaccuracy": 10,
+        "bullet": {
+          "type": "MissileBulletType",
+          "speed": 4,
+          "width": 8,
+          "height": 8,
+          "shrinkY": 0,
+          "drag": -0.005,
+          "homingRange": 120,
+          "homingPower": 0.2,
+          "splashDamage": 5,
+          "splashDamageRadius": 40,
+          "lifetime": 240,
+          "hitEffect": "hitLaser",
+          "despawnEffect": "hitLaser",
+          "frontColor": "ffffff",
+          "backColor": "98ffa9",
+          "trailColor": "98ffa9",
+          "healPercent": 2,
+          "collidesTeam": true,
+          "weaveScale": 12,
+          "weaveMag": 1,
+          "buildingDamageMultiplier": 2
+        }
+      }
+    ]
+  }

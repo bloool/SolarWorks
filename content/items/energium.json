@@ -1,0 +1,13 @@
+{
+	"name": "energium",
+	"cost": 1,
+	"color": "ffc999",
+	"research": {
+		"parent" : "silicon",
+		"requirements":[
+			{ "item": "silicon", "amount": 1800 },
+			{ "item": "coal", "amount": 1200 }
+		]
+	},
+	"hardness": 0
+}

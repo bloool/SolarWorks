@@ -1,0 +1,76 @@
+{
+	"type": "ItemTurret",
+	"name": "Edge",
+	"description":"A turret that will release shrapnel along its range when anything is nearby.",
+	"size": 3,
+	"health": 3600,
+	"reloadTime": 25,
+	"range": 90,
+	"maxAmmo": 20,
+	"shots": 8,
+	"spread" : 45,
+	"shootSound" : "shootBig",
+	"recoilAmount" : 0,
+	"shootCone": 360,
+	"rotateSpeed": 0,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootLength": 0,
+	
+	"ammoTypes": {
+		"titanium": {
+			"type" : "ShrapnelBulletType",
+			"damage": 35,
+			"length": 96,
+			"width" : 10,
+			"ammoMultiplier": 4,
+			"lifetime": 20,
+			"toColor" :"7575C8",
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"length": 10,
+				"baseLength": 10,
+				"lifetime": 15,
+				"particles": 5,
+				"sizeFrom": 6,
+				"sizeTo": 0,
+				"region": "shape-3",
+				"colorFrom": "7575C8",
+				"colorTo": "7575C8"
+			},
+			"smokeEffect": "none",
+			"serrations": 2
+		},
+		"thorium": {
+			"type" : "ShrapnelBulletType",
+			"damage": 45,
+			"length": 108,
+			"width" : 14,
+			"ammoMultiplier": 8,
+			"lifetime": 20,
+			"toColor" :"F8A3C7",
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"length": 10,
+				"baseLength": 10,
+				"lifetime": 15,
+				"particles": 5,
+				"sizeFrom": 6,
+				"sizeTo": 0,
+				"region": "shape-3",
+				"colorFrom": "F8A3C7",
+				"colorTo": "F8A3C7"
+			},
+			"smokeEffect": "none",
+			"serrations": 4
+		}
+	},
+		
+	"requirements": [
+		{ "item": "titanium", "amount": 400 },
+		{ "item": "lead", "amount": 160 },
+		{ "item": "plastanium", "amount": 60 }
+	],
+	"category": "turret",
+	"research": "keen"
+}

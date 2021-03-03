@@ -1,0 +1,46 @@
+{
+	"type": "flying",
+	"name": "Omega",
+	"accel": 0.1,
+	"mineSpeed": 12,
+	"mineTier": 2,
+	"buildSpeed": 1.25,
+	"speed": 4,
+	"drag": 0.1,
+	"rotateSpeed": 20,
+	"hitSize": 10,
+	"health": 420,
+	"commandLimit": 8,
+	"flying": true,
+	"engineOffset" : 6,
+	"weapons": 
+	[
+	  {
+		"name": "omegaGun",
+		"x": 2,
+		"y": 2,
+		"reload": 30,
+        "inaccuracy" : 5,
+		"shootSound": "starblast",
+		"ejectEffect" : "casing1",
+		"bullet": {
+			"type" : "BasicBulletType",
+			"damage": 20,
+			"speed": 3,
+			"lifetime": 70,
+			"height": 10,
+			"width" : 8,
+			"backColor": "ffc999",
+			"homingPower": 0.5,
+			"trailChance": 0.5,
+			"despawnEffect": "absorb",
+			"sprite": "cobaltmod-shine",
+			"weaveScale": 5,
+			"weaveMag": 3,
+			"lightning" : 1,
+            "lightningLength" : 5,
+			"shrinkY": 0
+			}
+		}
+	]
+  }

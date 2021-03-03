@@ -1,0 +1,19 @@
+{
+    "type": "flying",
+	"name": "Vein",
+    "description": "Mines resources more slowly than monos, but can mine better ores",
+	"accel": 0.1,
+	"mineSpeed": 2,
+	"mineTier": 3,
+    "itemCapacity" : 120,
+	"speed": 2,
+	"drag": 0.1,
+	"rotateSpeed": 20,
+	"hitSize": 10,
+	"health": 180,
+	"commandLimit": 0,
+	"flying": true,
+	"engineOffset" : 6,
+    "engineSize": 2,
+    "isCounted": false
+}

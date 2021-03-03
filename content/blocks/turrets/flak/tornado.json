@@ -1,0 +1,85 @@
+{
+	"type": "ItemTurret",
+	"name": "Tornado",
+	"description": "Shoots discharges of bullets at enemies.",
+	"size": 3,
+	"health": 2050,
+	"reloadTime": 40,
+	"range": 175,
+	"maxAmmo": 50,
+	"shots": 4,
+	"burstSpacing": 3,
+	"shootSound" : "shootSnap",
+	"inaccuracy": 36,
+	"shootCone": 40,
+	"recoilAmount" : 2,
+	"targetAir" : true, 
+	"targetGround" : false, 
+	
+	"ammoTypes": {
+		"metaglass": {
+			"type" : "FlakBulletType",
+			"splashDamage": 60,
+			"splashDamageRadius": 30,
+			"hitEffect": "flakExplosion",
+			"shootEffect": "shootSmall",
+			"ammoMultiplier": 4,
+			"speed": 4,
+			"height": 10,
+			"width" : 10,
+			"fragBullets": 12,
+			"fragBullet": {
+				"width" : 5,
+				"damage": 5,
+				"height": 12,
+				"shrinkY": 1,
+				"lifetime": 30,
+				"speed": 4,
+				"frontColor": "ffffff",
+				"backColor": "454545",
+				"despawnEffect": "none"
+			}
+			},
+		"plastanium": {
+			"type" : "FlakBulletType",
+			"splashDamage": 70,
+			"splashDamageRadius": 35,
+			"hitEffect": "plasticExplosion",
+			"shootEffect": "shootSmall",
+			"ammoMultiplier": 4,
+			"speed": 4,
+			"height": 10,
+			"width" : 10,
+			"backColor": "cbd97f",
+			"fragBullets": 3,
+			"fragBullet": {
+				"type" : "ShrapnelBulletType",
+				"damage": 15,
+				"length": 15,
+				"width" : 8,
+				"toColor": "cbd97f",
+				"serrations": 0
+			}
+			},
+		"blast-compound": {
+			"type" : "FlakBulletType",
+			"splashDamage": 90,
+			"splashDamageRadius": 60,
+			"hitEffect": "blastExplosion",
+			"shootEffect": "shootSmall",
+			"ammoMultiplier": 4,
+			"backColor": "ff795e",
+			"speed": 4,
+			"height": 8,
+			"width" : 8
+			}
+		},
+		
+	"requirements": [
+		{ "item": "lead", "amount": 150 },
+		{ "item": "thorium", "amount": 200 },
+		{ "item": "graphite", "amount": 180 }
+	],
+	"category": "turret",
+	"research": "scatter"
+}

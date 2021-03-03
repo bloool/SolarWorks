@@ -1,0 +1,56 @@
+{
+	"type": "ItemTurret",
+	"name": "Bash",
+	"description": "Shoots a bash of bullets at enemies.",
+	"size": 2,
+	"health": 2050,
+	"range": 60,
+	"maxAmmo": 50,
+	"shots": 14,
+	"reloadTime": 60,
+	"shootShake": 3,
+	"shootSound" : "shootBig",
+	"shootCone": 80,
+	"inaccuracy": 36,
+	"velocityInaccuracy": 0.4,
+	"recoilAmount" : 4,
+	"targetAir" : true, 
+	"targetGround" : true, 
+	
+	"ammoTypes": {
+		"copper": {
+			"type" : "BasicBulletType",
+			"damage": 12,
+			"speed": 4,
+			"lifetime": 15,
+			"height": 16,
+			"width" : 8
+			},
+		"graphite": {
+			"type" : "BasicBulletType",
+			"damage": 18,
+			"speed": 5,
+			"lifetime": 25,
+			"height": 18,
+			"width" : 10
+			},
+		"lamina-glass": {
+			"type" : "BasicBulletType",
+			"damage": 14,
+			"speed": 4,
+			"lifetime": 25,
+			"height": 18,
+			"width" : 10,
+			"pierce": true,
+			"pierceCap": 3
+			}
+		},
+		
+	"requirements": [
+		{ "item": "silicon", "amount": 25 },
+		{ "item": "lead", "amount": 120 },
+		{ "item": "copper", "amount": 180 }
+	],
+	"category": "turret",
+	"research": "salvo"
+}

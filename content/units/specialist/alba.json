@@ -1,0 +1,76 @@
+{
+	"type": "flying",
+	"name": "alba",
+	"accel": 0.3,
+	"speed": 2,
+	"drag": 0.05,
+	"hitSize": 20,
+	"health": 880,
+	"commandLimit": 4,
+	"range": 100,
+	"circleTarget": false,
+	"flying": true,
+	"engineOffset" : 12,
+	"engineSize": 3,
+	"lowAltitude" : true,
+	"targetAir" : true,
+	"weapons": [
+	  {
+		"name": "albaCannon",
+		"x": 0,
+		"y": 0,
+		"shootY": 5,
+		"reload": 180,
+		"mirror": false,
+		"rotate": true,
+		"rotateSpeed": 2,
+		"top": true,
+		"shootSound": "artillery",
+		"bullet": {
+			"type" : "ArtilleryBulletType",
+			"height": 12,
+			"width" : 12,
+			"speed" : 3,
+			"lifetime": 60,
+			"splashDamage": 50,
+			"splashDamageRadius": 30,
+			"hitEffect":"shockwave",
+			"collidesAir": true,
+			"fragBullets": 5,
+			"fragLifeMin" : 0.3,
+			"fragBullet": {
+				"type" : "basicBulletType",
+				"damage": 10,
+				"length": 5,
+				"width" : 5,
+				"hitEffect": "flakExplosion",
+				"lifetime": 40,
+				"speed": 3,
+				"collidesGround": true,
+				"pierce": true,
+				"pierceBuilding": true,
+				"pierceCap": 2
+				}
+			}
+		},
+		{
+			"name": "albaGun",
+			"x": 7,
+			"y": 10,
+			"shootY": 5,
+			"reload": 10,
+			"mirror": true,
+			"rotate": false,
+			"top": true,
+			"shootSound": "shootSnap",
+			"bullet": {
+				"type" : "ShrapnelBulletType",
+				"damage": 20,
+				"length": 100,
+				"width" : 15,
+				"toColor": "bf92f9"
+			}
+		}
+	],
+	"research": "scandi"
+  }

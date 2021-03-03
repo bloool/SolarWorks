@@ -1,0 +1,13 @@
+{
+	"name": "Magnetite",
+	"cost": 2,
+	"color": "7685aa",
+	"research": {
+		"parent" : "thorium",
+		"requirements":[
+			{ "item": "lead", "amount": 5000 },
+			{ "item": "thorium", "amount": 8000 }
+		]
+	},
+	"hardness": 2
+}

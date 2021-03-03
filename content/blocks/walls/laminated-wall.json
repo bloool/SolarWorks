@@ -1,0 +1,11 @@
+{
+"name": "Large Laminated Wall",
+"description": "Releases shrapnel when attacked, and stops piercing bullets.",
+"size": 2,
+"health": 2800,
+"requirements": [
+    { "item": "lamina-glass", "amount": 16 }
+],
+"category": "defense",
+"research": "small-laminated-wall"
+}

@@ -1,0 +1,13 @@
+{
+	"name": "Lamina Glass",
+	"cost": 2,
+	"color": "51517a",
+	"research": {
+		"parent" : "metaglass",
+		"requirements":[
+			{ "item": "silicon", "amount": 2000 },
+			{ "item": "metaglass", "amount": 8000 }
+		]
+	},
+	"hardness": 5
+}

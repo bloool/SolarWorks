@@ -1,0 +1,38 @@
+{
+	"type": "PowerTurret",
+	"name": "Erode",
+	"description":"Saps nearby enemies slowing them down and pulling them in",
+	"size": 2,
+	"health": 1200,
+	"reloadTime": 20,
+	"range": 200,
+	"maxAmmo": 20,
+	"shots": 1,
+	"shootSound" : "sap",
+	"recoilAmount" : 1,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"powerUse": 1.5,
+	
+	"shootType": {
+			"type" : "SapBulletType",
+			"damage": 30,
+			"ammoMultiplier": 5,
+			"sapStrength": 1,
+			"length": 250,
+			"shootEffect": "shootSmall",
+			"hitColor": "bf92f9",
+			"color": "bf92f9",
+			"width": 0.75,
+			"lifetime": 30,
+			"knockback": -1,
+		},	
+		
+	"requirements": [
+		{ "item": "titanium", "amount": 60 }, 
+		{ "item": "silicon", "amount": 80 }
+		{ "item": "lead", "amount": 180 }
+	],
+	"category": "turret",
+	"research": "arc"
+}

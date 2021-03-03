@@ -1,0 +1,48 @@
+{
+	"type": "ItemTurret",
+	"name": "Obscur",
+	"description":"Long range shotgun turret that can only hit airbone enemies.",
+	"size": 3,
+	"health": 1800,
+	"reloadTime": 60,
+	"range": 280,
+	"maxAmmo": 20,
+	"shots": 3,
+	"shootSound" : "artillery",
+	"inaccuracy": 3,
+	"spread": 5,
+	"recoilAmount" : 2,
+	"shootCone": 30,
+	"shootShake": 3,
+	"targetAir" : true, 
+	"targetGround" : false,
+	"shootLength": 5,
+	"rotateSpeed": 5,
+	
+	"ammoTypes": {
+		"titanium": {
+			"type" : "ShrapnelBulletType",
+			"damage": 50,
+			"length": 320,
+			"width" : 20,
+			"toColor" :"7575C8",
+			"collidesGround": false
+			},
+		"thorium": {
+			"type" : "ShrapnelBulletType",
+			"damage": 75,
+			"length": 320,
+			"width" : 22,
+			"toColor" : "F8A3C7",
+			"collidesGround": false
+			}
+		},	
+
+	"requirements": [
+		{ "item": "titanium", "amount": 120 }, 
+		{ "item": "thorium", "amount": 160 },
+		{ "item": "graphite", "amount": 100 }
+	],
+	"category": "turret",
+	"research": "tornado"
+}

@@ -1,0 +1,48 @@
+{
+	"type": "LiquidTurret",
+	"name": "Esse",
+	"description":"Concentrates vidae into energy bolts",
+	"size": 3,
+	"health": 2400,
+	"xRand": 5,
+	"reloadTime": 5,
+	"range": 250,
+	"liquidCapacity": 10,
+	"shots": 1,
+	"inaccuracy": 5,
+	"shootSound": "lasershoot",
+	"velocityInaccuracy": 0.1,
+	"recoilAmount" : 1,
+	"shootCone": 20,
+	"targetAir" : true, 
+	"targetGround" : true,
+	
+	"ammoTypes": {
+			"vidae": {
+				"type" : "LaserBoltBulletType",
+				"damage": 50,
+				"speed" : 5,
+				"fragBullets": 5,
+				"splashDamage": 5,
+				"splashDamageRadius": 25,
+				"backColor" : "84f491" ,
+				"frontColor" : "ffffff",
+				"fragBullet": {
+					"type": "LiquidBulletType",
+					"liquid": "vidae",
+					"damage": 2,
+					"pierce": true,
+					"speed": 1,
+					"knockback": 1	
+				}
+			}
+		},	
+		
+	"requirements": [
+		{ "item": "thorium", "amount": 340 }, 
+		{ "item": "metaglass", "amount": 180 }
+		{ "item": "graphite", "amount": 250 }
+	],
+	"category": "turret",
+	"research": "cyclone"
+}

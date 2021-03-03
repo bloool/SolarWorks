@@ -1,0 +1,69 @@
+{
+	"type": "PowerTurret",
+	"name": "Skewer",
+	"description":"Shoots long range lasers at ground enemies",
+	"size": 4,
+	"health": 3400,
+	"reloadTime": 240,
+	"range": 380,
+	"shootSound" : "laserblast",
+	"restitution" : 0.1,
+	"shootEffect": "lightningShoot",
+	"inaccuracy": 5,
+	"powerUse": 15,
+	"targetAir" : false, 
+	"targetGround" : true, 
+	"recoilAmount" : 6,
+	"shootShake": 2,
+	"shootLength": 0,
+	"rotateSpeed": 3,
+
+	"chargeTime": 60,
+	"chargeBeginEffect": {
+		"type": "MultiEffect",
+		"lifetime": 60,
+		"effects": [
+			{
+				"type": "ParticleEffect",
+				"length": -60,
+				"baseLength": 60,
+				"lifetime": 60,
+				"particles": 50,
+				"sizeFrom": 0,
+				"sizeTo": 5,
+				"colorFrom": "ffffff",
+				"colorTo": "a9d8ff"
+			},
+			{
+				"type": "WaveEffect",
+				"lifetime": 60,
+				"sizeFrom": 40,
+				"sizeTo": 0,
+				"strokeFrom": 3,
+				"strokeTo": 0,
+				"colorFrom": "ffffff",
+				"colorTo": "a9d8ff"
+			}
+		]
+	},
+
+	"shootType": {
+		"type": "LaserBulletType",
+		"length" : 400,
+		"damage" : 1000,
+		"width" : 55,
+		"lifetime" : 65,
+		"lightningLength" : 7,
+		"lightningLengthRand" : 15,
+		"lightningAngleRand" : 40,
+		"largeHit" : true,
+		"sideAngle" : 90
+	},
+	"requirements": [
+		{ "item": "silicon", "amount": 540 },
+		{ "item": "surge-alloy", "amount": 120},
+		{ "item": "graphite", "amount": 140 }
+	],
+	"category": "turret",
+	"research": "meltdown"
+}

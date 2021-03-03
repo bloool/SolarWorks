@@ -1,0 +1,33 @@
+{
+    "type": "GenericCrafter",
+    "name": "Lamina Press",
+    "health" : 450,
+    "itemCapacity": 12,
+    "updateEffect": "steam",
+    "craftEffect": "pulverizeMedium",
+    "outputItem": {"item": "lamina-glass", "amount": 2},
+    "craftTime": 60,
+    "size": 3,
+    "hasItems": true,
+    "hasLiquids": true,
+    "consumes": {
+    "power": 2,
+		"items": {
+			"items": [
+				{ "item": "silicon", "amount": 2},
+        { "item": "metaglass", "amount" : 2}
+            ]
+        },
+            "liquid": {
+				"liquid": "water",
+				"amount": 0.2
+			}
+		},
+    "requirements": [
+		{ "item": "copper", "amount": 180 },
+		{ "item": "lead", "amount": 250 },
+		{ "item": "thorium", "amount": 80 }
+    ],
+    "category": "crafting",
+	"research": "multi-press"
+}

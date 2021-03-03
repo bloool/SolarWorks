@@ -1,0 +1,32 @@
+{
+    "type": "GenericCrafter",
+    "name": "Carbon Press",
+    "health" : 450,
+    "itemCapacity": 12,
+    "updateEffect": "steam",
+    "craftEffect": "pulverizeMedium",
+    "outputItem": {"item": "carbon", "amount": 1},
+    "craftTime": 60,
+    "size": 3,
+    "hasItems": true,
+    "hasLiquids": true,
+    "consumes": {
+    "power": 4,
+		"items": {
+			"items": [
+				{ "item": "graphite", "amount": 4}
+            ]
+        },
+            "liquid": {
+				"liquid": "water",
+				"amount": 0.4
+			}
+		},
+    "requirements": [
+		{ "item": "magnetite", "amount": 230 },
+		{ "item": "graphite", "amount": 80 },
+		{ "item": "plastanium", "amount": 120 }
+    ],
+    "category": "crafting",
+	  "research": "multi-press"
+}

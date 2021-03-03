@@ -1,0 +1,210 @@
+{
+	"type": "ItemTurret",
+	"name": "Nime",
+	"description": "Shoots mines at enemies.",
+	"details" : "Works much better if used with logic to place bombs on advance",
+	"size": 3,
+	"health": 2050,
+	"range": 260,
+	"maxAmmo": 50,
+	"shots": 1,
+	"reloadTime": 20,
+	"shootShake": 1,
+	"shootSound" : "shootBig",
+	"shootCone": 80,
+	"inaccuracy": 24,
+	"velocityInaccuracy": 0.4,
+	"recoilAmount" : 4,
+	"targetAir" : true, 
+	"targetGround" : true, 
+	
+	"ammoTypes": {
+		"blast-compound": {
+			"type" : "FlakBulletType",
+			"splashDamage": 68,
+			"splashDamageRadius": 32,
+			"shrinkY": 0,
+			"speed": 4,
+			"lifetime": 600,
+			"drag": 0.04,
+			"height": 14,
+			"width" : 14,
+			"collidesGround": true,
+			"hitSound": "artillery",
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"lifetime": 60,
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"length": 20,
+						"baseLength": 20,
+						"lifetime": 15,
+						"particles": 50,
+						"sizeFrom": 6,
+						"sizeTo": 0,
+						"region": "shape-3",
+						"colorFrom": "f9c27a",
+						"colorTo": "ff795e"
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 15,
+						"sizeFrom": 0,
+						"sizeTo": 36,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "f9c27a",
+						"colorTo": "fff8e8"
+					}
+				]
+				},
+			"sprite": "solar-works-mine",
+			"backColor": "ff795e"
+		},
+		"silicon": {
+			"type" : "FlakBulletType",
+			"splashDamage": 28,
+			"splashDamageRadius": 18,
+			"explodeRange" : 18,
+			"shrinkY": 0,
+			"speed": 4,
+			"lifetime": 600,
+			"drag": 0.04,
+			"height": 10,
+			"width" : 10,
+			"collidesGround": true,
+			"hitSound": "artillery",
+			"homingPower" : 0.08,
+            "homingRange" : 150,
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"lifetime": 60,
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"length": 20,
+						"baseLength": 20,
+						"lifetime": 15,
+						"particles": 50,
+						"sizeFrom": 6,
+						"sizeTo": 0,
+						"region": "shape-3",
+						"colorFrom": "53565c",
+						"colorTo": "797d85"
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 15,
+						"sizeFrom": 0,
+						"sizeTo": 18,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "f9c27a",
+						"colorTo": "fff8e8"
+					}
+				]
+				},
+			"sprite": "solar-works-mine",
+			"backColor": "797d85"
+		},
+		"pyratite": {
+			"type" : "FlakBulletType",
+			"splashDamage": 46,
+			"splashDamageRadius": 24,
+			"shrinkY": 0,
+			"speed": 4,
+			"lifetime": 300,
+			"drag": 0.04,
+			"height": 12,
+			"width" : 12,
+			"collidesGround": true,
+			"incendAmount": 1,
+			"hitSound": "flame",
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"lifetime": 60,
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"length": 20,
+						"baseLength": 20,
+						"lifetime": 15,
+						"particles": 50,
+						"sizeFrom": 6,
+						"sizeTo": 0,
+						"region": "shape-3",
+						"colorFrom": "f9c27a",
+						"colorTo": "ffaa5f"
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 15,
+						"sizeFrom": 0,
+						"sizeTo": 26,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "f9c27a",
+						"colorTo": "fff8e8"
+					}
+				]
+				},
+			"sprite": "solar-works-mine",
+			"backColor": "ffaa5f"
+		},
+		"surge-alloy": {
+			"type" : "FlakBulletType",
+			"damage": 40,
+			"splashDamage": 180,
+			"splashDamageRadius": 36,
+			"shrinkY": 0,
+			"speed": 4,
+			"lifetime": 300,
+			"drag": 0.04,
+			"height": 12,
+			"width" : 12,
+			"collidesGround": true,
+			"lightning" : 4,
+            "lightningLength" : 10,
+			"hitSound": "spark",
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"lifetime": 60,
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"length": 20,
+						"baseLength": 20,
+						"lifetime": 15,
+						"particles": 50,
+						"sizeFrom": 6,
+						"sizeTo": 0,
+						"region": "shape-3",
+						"colorFrom": "f9c27a",
+						"colorTo": "f3e979"
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 15,
+						"sizeFrom": 0,
+						"sizeTo": 38,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "f9c27a",
+						"colorTo": "fff8e8"
+					}
+				]
+				},
+			"sprite": "solar-works-mine",
+			"backColor": "f3e979"
+		}
+	},
+		
+	"requirements": [
+		{ "item": "silicon", "amount": 130 },
+		{ "item": "lead", "amount": 180 },
+		{ "item": "titanium", "amount": 230 }
+	],
+	"category": "turret",
+	"research": "ripple"
+}

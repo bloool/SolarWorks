@@ -1,0 +1,93 @@
+{
+	"type": "flying",
+	"name": "noctua",
+	"accel": 0.3,
+	"speed": 1.5,
+	"drag": 0.05,
+	"rotateSpeed": 1.5,
+	"hitSize": 25,
+	"health": 7000,
+	"commandLimit": 4,
+	"range": 100,
+	"circleTarget": false,
+	"flying": true,
+	"engineOffset" : 16,
+	"engineSize": 5,
+	"lowAltitude" : true,
+	"targetAir" : true,
+	"weapons": [
+	  {
+		"name": "noctuaScatter",
+		"x": 8,
+		"y": 0,
+		"shootY": 5,
+		"reload": 30,
+		"inaccuracy": 16,
+		"shots": 2,
+        "shotDelay": 4,
+		"mirror": true,
+		"rotate": true,
+		"rotateSpeed": 2,
+		"top": true,
+		"shootSound": "shootBig",
+		"bullet": {
+			"type" : "BasicBulletType",
+			"splashDamage" : 40,
+            "splashDamageRadius" : 15,
+			"speed": 5,
+			"height": 16,
+			"width" : 10,
+			"pierce": true,
+			"pierceBuilding": true,
+			"pierceCap": 4,
+			"hitEffect": "flakExplosion",
+			"despawnEffect": "flakExplosionBig"
+			}
+		},
+		{
+			"name": "noctuaGun",
+			"x": 7,
+			"y": 10,
+			"shootY":10,
+			"reload": 10,
+			"mirror": true,
+			"rotate": true,
+			"rotateSpeed": 2,
+			"top": true,
+			"shootSound": "shootSnap",
+			"bullet": {
+				"type" : "RailBulletType",
+				"updateEffectSeg": 40,
+				"pierceEffect": "flakExplosion",
+				"updateEffect": "railTrail",
+				"smokeEffect": "shootBig2",
+				"pierceDamageFactor": 0.1,
+				"damage": 40,
+				"length": 100
+				}
+			},
+			{
+				"name": "noctuaGun",
+				"x": 11,
+				"y": -10,
+				"shootY": 10,
+				"reload": 8,
+				"mirror": true,
+				"rotate": true,
+				"rotateSpeed": 2,
+				"top": true,
+				"shootSound": "shootSnap",
+				"bullet": {
+					"type" : "RailBulletType",
+					"updateEffectSeg": 40,
+					"pierceEffect": "flakExplosion",
+					"updateEffect": "railTrail",
+					"smokeEffect": "shootBig2",
+					"pierceDamageFactor": 0.1,
+					"damage": 40,
+					"length": 150
+					}
+				}
+	],
+	"research": "alba"
+  }

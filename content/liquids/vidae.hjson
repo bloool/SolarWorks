@@ -1,0 +1,9 @@
+{
+name: Vidae
+description: A refreshing liquid made from extracting spore cells and combining them with cryofluid.
+temperature: 0.1
+viscosity: 0
+heatCapacity: 1.32
+color: 84f491
+research: cryofluid
+}

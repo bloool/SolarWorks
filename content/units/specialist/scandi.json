@@ -1,0 +1,49 @@
+{
+	"type": "flying",
+	"name": "scandi",
+	"accel": 1,
+	"speed": 3,
+	"drag": 0.1,
+	"hitSize": 10,
+	"health": 320,
+	"commandLimit": 5,
+	"range": 100,
+	"circleTarget": false,
+	"flying": true,
+	"engineOffset" : 6.5,
+	"targetAir" : true,
+	"weapons": [
+	  {
+		"name": "scandiG",
+		"x": 0,
+		"y": 0,
+		"shootY": 5,
+		"reload": 18,
+		"xRand" : 4,
+		"mirror": false,
+		"rotate": false,
+		"shootSound": "shootSnap",
+		"bullet": {
+			"type" : "FlakBulletType",
+			"splashDamage": 40,
+			"splashDamageRadius": 10,
+			"length": 8,
+			"width" : 8,
+			"hitEffect": "flakExplosion",
+			"lifetime": 40,
+			"speed": 3,
+			"fragBullets": 3,
+			"collidesGround": true,
+			"fragBullet": {
+				"type" : "ShrapnelBulletType",
+				"damage": 2,
+				"length": 15,
+				"width" : 5,
+				"toColor": "bf92f9",
+				"serrations": 0
+			}
+		}
+	  }
+	],
+	"research": "harpy"
+  }

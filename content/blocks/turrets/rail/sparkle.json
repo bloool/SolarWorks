@@ -1,0 +1,26 @@
+{
+	"name": "Sparkle",
+	"description":"Shoots rail bullet that slow enemies for a bit.",
+	"size": 3,
+	"health": 3900,
+	"reloadTime": 30,
+	"range": 220,
+	"maxAmmo": 20,
+	"shots": 3,
+	"shootSound" : "shotgun",
+	"recoilAmount" : 2,
+	"shootShake": 0.5,
+	"targetAir" : true,
+	"targetGround" : false,
+	"inaccuracy": 15,
+	"velocityInaccuracy": 0.2,
+	"shootCone": 30,
+	"rotateSpeed": 5,	
+	"requirements": [
+		{ "item": "surge-alloy", "amount": 200 }, 
+		{ "item": "silicon", "amount": 400 },
+		{ "item": "thorium", "amount": 300 }
+	],
+	"category": "turret",
+	"research": "scour"
+}

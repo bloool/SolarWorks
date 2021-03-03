@@ -1,0 +1,44 @@
+{
+	"type": "legs",
+	"name": "Ranae",
+	"speed": 1,
+	"drag": 0.3,
+	"hitSize": 10,
+	"rotateSpeed": 5,
+	"health": 250,
+	"commandLimit": 4,
+	"mineSpeed": 5,
+	"mineTier": 2,
+	"buildSpeed": 0.4,
+	"range": 25,
+	"legCount": 4,
+	"legLength": 9,
+	"legTrns": 0.6,
+	"legMoveSpace": 1.4,
+	"hovering": true,
+	"allowLegStep": true,
+	"visualElevation": 0.2,
+	"groundLayer": 75,
+	"weapons": [
+	  {
+		"name": "ranaeG",
+		"x": 7,
+		"shootY": 3,
+		"reload": 10,
+		"alternate": false,
+		"ejectEffect": "none",
+		"recoil": 1,
+		"rotate": false,
+		"shootSound": "lasershoot",
+		"bullet": {
+		  "type": "LaserBoltBulletType",
+		  "damage": 10,
+		  "speed": 5,
+		  "backColor": "84f491",
+		  "frontColor": "ffffff",
+		  "collidesTeam": true
+		}
+	  }
+	],
+	"research": "toxopid"
+  }

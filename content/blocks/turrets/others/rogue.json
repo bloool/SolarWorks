@@ -1,0 +1,162 @@
+{
+	"type": "ItemTurret",
+	"name": "Rogue",
+	"description":"Shoots thousands of weak bullets at enemies.",
+	"size": 3,
+	"health": 2050,
+	"reloadTime": 5,
+	"range": 180,
+	"maxAmmo": 50,
+	"shots": 3,
+	"alternate": true,
+	"spread": 4,
+	"shootShake": 0.5,
+	"shootSound" : "shootSnap",
+	"shootEffect": {
+		"type": "ParticleEffect",
+		"colorFrom": "53565c",
+		"colorTo": "797d85",
+		"cone": 30,
+		"length": 40,
+		"sizeFrom": 3,
+		"sizeTo": 0.5,
+		"lifetime": 30,
+		"particles": 50
+	},
+	"ammoUseEffect": "casing2",
+	"inaccuracy": 3,
+	"shootCone": 18,
+	"recoilAmount" : 2,
+	"targetAir" : true, 
+	"targetGround" : true, 
+	
+	"ammoTypes": {
+		"coal": {
+			"type" : "BasicBulletType",
+			"damage": 16,
+			"speed": 5.0,
+			"lifetime": 50,
+			"height": 16,
+			"width" : 8,
+			"frontColor": "797d85",
+			"backColor": "53565c",
+			"trailEffect" : {
+				"type": "ParticleEffect",
+				"colorFrom": "53565c",
+				"colorTo": "797d85",
+				"cone": 30,
+				"length": 0,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"lifetime": 30,
+				"particles": 1
+			},
+			"trailChance": 0.1,
+			"despawnEffect": {
+				"type": "ParticleEffect",
+				"colorFrom": "53565c",
+				"colorTo": "797d85",
+				"cone": 15,
+				"length": 60,
+				"sizeFrom": 3,
+				"sizeTo": 0.5,
+				"lifetime": 15,
+				"particles": 25
+				}
+			},
+		"graphite": {
+			"type" : "BasicBulletType",
+			"damage": 24,
+			"speed": 6.0,
+			"lifetime": 50,
+			"height": 16,
+			"width" : 10,
+			"frontColor": "797d85",
+			"backColor": "53565c",
+			"ammoMultiplier": 2,
+			"trailEffect" : {
+				"type": "ParticleEffect",
+				"colorFrom": "53565c",
+				"colorTo": "797d85",
+				"cone": 30,
+				"length": 0,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"lifetime": 30,
+				"particles": 1
+			},
+			"trailChance": 0.25,
+			"despawnEffect": {
+				"type": "ParticleEffect",
+				"colorFrom": "53565c",
+				"colorTo": "797d85",
+				"cone": 15,
+				"length": 80,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"lifetime": 15,
+				"particles": 25
+				}
+			},
+		"carbon": {
+			"type" : "FlakBulletType",
+			"collidesGround": true,
+			"splashDamage": 36,
+			"splashDamageRadius": 12,
+			"speed": 7.0,
+			"lifetime": 30,
+			"height": 16,
+			"width" : 10,
+			"frontColor": "797d85",
+			"backColor": "53565c",
+			"ammoMultiplier": 4,
+			"trailEffect" : {
+				"type": "ParticleEffect",
+				"colorFrom": "53565c",
+				"colorTo": "797d85",
+				"cone": 30,
+				"length": 0,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"lifetime": 30,
+				"particles": 1
+			},
+			"trailChance": 0.25,
+			"hitEffect": "none",
+			"despawnEffect": {
+				"type": "MultiEffect",
+				"lifetime": 60,
+				"effects": [
+					{
+						"type": "ParticleEffect",
+						"length": 20,
+						"baseLength": 20,
+						"lifetime": 15,
+						"particles": 50,
+						"sizeFrom": 3,
+						"sizeTo": 0,
+						"colorFrom": "53565c",
+						"colorTo": "797d85"
+					},
+					{
+						"type": "WaveEffect",
+						"lifetime": 15,
+						"sizeFrom": 0,
+						"sizeTo": 20,
+						"strokeFrom": 3,
+						"strokeTo": 0,
+						"colorFrom": "53565c",
+						"colorTo": "797d85"
+					}
+				]
+				}
+			}
+		},
+		
+	"requirements": [
+		{ "item": "copper", "amount": 70 },
+		{ "item": "lead", "amount": 160 }
+	],
+	"category": "turret",
+	"research": "scatter"
+}

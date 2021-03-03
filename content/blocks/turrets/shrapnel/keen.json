@@ -1,0 +1,73 @@
+{
+	"type": "ItemTurret",
+	"name": "Keen",
+	"description":"A turret that will release shrapnel along its range when anything is nearby.",
+	"size": 2,
+	"health": 840,
+	"reloadTime": 30,
+	"range": 60,
+	"maxAmmo": 20,
+	"shots": 4,
+	"spread" : 90,
+	"shootSound" : "shootSnap",
+	"recoilAmount" : 0,
+	"shootCone": 360,
+	"rotateSpeed": 0,
+	"targetAir" : true, 
+	"targetGround" : true,
+	"shootLength": 0,
+	"ammoTypes": {
+		"lead": {
+			"type" : "ShrapnelBulletType",
+			"damage": 25,
+			"length": 64,
+			"width" : 4,
+			"ammoMultiplier": 2,
+			"toColor" :"8c7fa9",
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"length": 10,
+				"baseLength": 10,
+				"lifetime": 15,
+				"particles": 5,
+				"sizeFrom": 3,
+				"sizeTo": 0,
+				"region": "shape-3",
+				"colorFrom": "8c7fa9",
+				"colorTo": "8c7fa9"
+			},
+			"smokeEffect": "none",
+			"serrations": 0
+		},
+		"titanium": {
+			"type" : "ShrapnelBulletType",
+			"damage": 35,
+			"length": 64,
+			"width" : 8,
+			"ammoMultiplier": 4,
+			"toColor" :"7575C8",
+			"shootEffect": {
+				"type": "ParticleEffect",
+				"length": 10,
+				"baseLength": 10,
+				"lifetime": 15,
+				"particles": 5,
+				"sizeFrom": 6,
+				"sizeTo": 0,
+				"region": "shape-3",
+				"colorFrom": "7575C8",
+				"colorTo": "7575C8"
+			},
+			"smokeEffect": "none",
+			"serrations": 2
+		}
+	},
+		
+	"requirements": [
+		{ "item": "graphite", "amount": 80 },
+		{ "item": "lead", "amount": 120 },
+		{ "item": "copper", "amount": 80 }
+	],
+	"category": "turret",
+	"research": "fusion"
+}

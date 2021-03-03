@@ -1,0 +1,11 @@
+{
+"name": "Laminated Wall",
+"description": "Releases shrapnel when attacked, and stops piercing bullets.",
+"size": 1,
+"health": 700,
+"requirements": [
+    { "item": "lamina-glass", "amount": 4 }
+],
+"category": "defense",
+"research": "thorium-wall"
+}

@@ -1,0 +1,35 @@
+{
+	"type": "flying",
+	"name": "Harpy",
+	"accel": 0.1,
+	"speed": 3,
+	"drag": 0.05,
+	"hitSize": 10,
+	"health": 120,
+	"commandLimit": 4,
+	"range": 150,
+	"circleTarget": true,
+	"flying": true,
+	"engineOffset" : 5.5,
+	"targetAir" : false,
+	"weapons": [
+	  {
+		"name": "harpyG",
+		"x": 0,
+		"y": 2,
+		"reload": 15,
+		"mirror": false,
+		"rotate": false,
+		"shootSound": "shootSnap",
+		"bullet": {
+			"type" : "ShrapnelBulletType",
+			"damage": 20,
+			"length": 55,
+			"width" : 10,
+			"toColor": "bf92f9",
+			"serrations": 0
+		}
+	  }
+	],
+	"research": "eclipse"
+  }

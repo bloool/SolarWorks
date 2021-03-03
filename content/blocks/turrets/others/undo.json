@@ -1,0 +1,24 @@
+{
+	"name": "Undo",
+	"description": "Vaporizes spores to send bubbles that left a toxic fog as trail.",
+	"size": 3,
+	"health": 2050,
+	"range": 260,
+	"maxAmmo": 50,
+	"shots": 3,
+	"spread": 16,
+	"ammoPerShot" : 3,
+	"reloadTime": 45,
+	"shootSound" : "lasershoot",
+	"shootCone": 80,
+	"powerUse": 2,
+	"targetAir" : true, 
+	"targetGround" : true, 
+	"requirements": [
+		{ "item": "thorium", "amount": 340 },
+		{ "item": "titanium", "amount": 280 },
+		{ "item": "plastanium", "amount": 380 }
+	],
+	"category": "turret",
+	"research": "lancer"
+}

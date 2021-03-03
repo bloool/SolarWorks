@@ -1,0 +1,62 @@
+{
+	"type": "ItemTurret",
+	"name": "Scour",
+	"description":"Mid-range rail-gun that has pierce",
+	"size": 4,
+	"health": 4500,
+	"reloadTime": 40,
+	"range": 300,
+	"maxAmmo": 20,
+	"shots": 3,
+	"spread": 2,
+	"shootSound" : "artillery",
+	"recoilAmount" : 2,
+	"shootShake": 6,
+	"targetAir" : true, 
+	"targetGround" : true,
+	
+	"ammoTypes": {
+		"graphite": {
+			"type" : "RailBulletType",
+			"updateEffectSeg": 40,
+			"pierceEffect": "railHit",
+			"updateEffect": "railTrail",
+			"smokeEffect": "shootBig2",
+			"pierceDamageFactor": 0.1,
+			"damage": 100,
+			"length": 310
+			},
+		"lamina-glass": {
+			"type" : "RailBulletType",
+			"updateEffectSeg": 60,
+			"pierceEffect": "railHit",
+			"updateEffect": "railTrail",
+			"smokeEffect": "shootBig2",
+			"pierceDamageFactor": 0,
+			"reloadMultiplier": 2,
+			"damage": 25,
+			"length": 360
+			},
+		"blast-compound": {
+			"type" : "RailBulletType",
+			"updateEffectSeg": 20,
+			"pierceEffect": "railHit",
+			"hitEffect": "massiveExplosion",
+			"updateEffect": "railTrail",
+			"smokeEffect": "shootBig2",
+			"reloadMultiplier": 0.6,
+			"pierceDamageFactor": 1,
+			"splashDamage": 150,
+			"splashDamageRadius": 28,
+			"length": 320
+		}
+	},	
+		
+	"requirements": [
+		{ "item": "plastanium", "amount": 80 }, 
+		{ "item": "silicon", "amount": 160 },
+		{ "item": "graphite", "amount": 130 }
+	],
+	"category": "turret",
+	"research": "cyclone"
+}
