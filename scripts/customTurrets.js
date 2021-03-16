@@ -67,6 +67,8 @@ sparkle.ammoTypes.put(
     items.LaminaGlass, laminaSparkle
 );
 
+
+
 const undo = extend(ItemTurret, "undo", {});
 const cloud = extend(BasicBulletType, {
     type : "BasicBulletType",
@@ -109,6 +111,34 @@ const toxicBubble = extend(BasicBulletType, {
 undo.ammoTypes.put(
     Items.sporePod, toxicBubble
 );
+
+const dazzle = extend(ItemTurret, "dazzle", {});
+const sharp = extend(ShrapnelBulletType, {
+    damage: 10,
+    length: 50,
+    lifetime: 5,
+    width : 12,
+    serrations: 0
+});
+const shardBomb = extend(BasicBulletType, {
+    type : "BasicBulletType",
+    height: 12,
+    width : 8,
+    damage: 15,
+    speed : 4,
+    shrinkY: 0,
+    pierce: true,
+    pierceCap: 3,
+    update(b){
+        sharp.create(b, b.x, b.y, b.rotation() + 120, Mathf.random(0.5, 2), 1);
+        sharp.create(b, b.x, b.y, b.rotation() - 120, Mathf.random(0.5, 2), 1);
+        sharp.create(b, b.x, b.y, b.rotation() + 180, Mathf.random(0.5, 2), 1);
+    }
+});
+dazzle.ammoTypes.put(
+    items.LaminaGlass, shardBomb
+);
+
 const shard = extend(BasicBulletType, {
     damage: 35,
     speed: 4,
@@ -127,7 +157,7 @@ vega.buildType = () => extend(PowerTurret.PowerTurretBuild, vega, {
         this.super$updateTile();
         let rx = this.x + Mathf.range(-15, 15)
         let ry = this.y + Mathf.range(-15, 15)
-        if(this.isShooting() && this.hasAmmo() && Mathf.chance(0.05)){
+        if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && Mathf.chance(0.05)){
             shard.create(this, this.team, rx, ry, this.rotation)
             Fx.absorb.at(rx, ry)
             Sounds.lasershoot.at(this)
@@ -135,7 +165,27 @@ vega.buildType = () => extend(PowerTurret.PowerTurretBuild, vega, {
     },
 });
 
-/*
-star.create(this, this.team, this.x + Mathf.range(-15, 15), this.y + Mathf.range(-15, 15), this.rotation)
-Sounds.lasershoot.at(this)
-*/
+const laser = extend(LaserBulletType, {
+    colors : [Color.valueOf("ffe18f"),Color.valueOf("ffc999"),Color.valueOf("ffffff")],
+    hitEffect : Fx.absorb,
+    despawnEffect : Fx.none,
+    damage: 80,
+    hitSize : 16,
+    lifetime : 36,
+    length : 180,
+    width : 10,
+});
+
+const antares = extend(PowerTurret, "antares", {});
+antares.buildType = () => extend(PowerTurret.PowerTurretBuild, antares, {
+    updateTile(){
+        this.super$updateTile();
+        let rx = this.x + Mathf.range(-15, 15)
+        let ry = this.y + Mathf.range(-15, 15)
+        if(this.isShooting() && this.power.status > 0.5 && this.hasAmmo() && Mathf.chance(0.05)){
+            laser.create(this, this.team, rx, ry, this.rotation)
+            Fx.absorb.at(rx, ry)
+            Sounds.sap.at(this)
+        }
+    },
+});

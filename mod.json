@@ -2,7 +2,7 @@
   "name": "solar-works",
   "displayName": "Solar Works",
   "author": "blool",
-  "description": "h",
+  "description": "(WIP mod) Plans on adding more unique turrets and shit like that using scripts and json",
   "minGameVersion": "125.1",
-  "version": "1"
+  "version": "0.8"
 }

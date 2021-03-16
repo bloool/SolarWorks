@@ -1,0 +1,21 @@
+{
+	"name": "Dazzle",
+	"description": "h",
+	"size": 3,
+	"health": 2050,
+	"range": 180,
+	"reloadTime": 60,
+	"shootShake": 3,
+	"shootSound" : "shootBig",
+	"shootCone": 40,
+	"recoilAmount" : 2,
+	"targetAir" : true, 
+	"targetGround" : true, 
+	"requirements": [
+		{ "item": "silicon", "amount": 25 },
+		{ "item": "lead", "amount": 120 },
+		{ "item": "copper", "amount": 180 }
+	],
+	"category": "turret",
+	"research": "fuse"
+}
